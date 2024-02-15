@@ -52,8 +52,10 @@ arcade.draw_line(425, 370, 545, 400, arcade.color.BLACK, 3)
 
 #Nariz
 arcade.draw_circle_filled(365, 390, 50, arcade.color.RED)
+arcade.draw_arc_filled(365, 390, 90, 90, arcade.color.AUBURN, 225, 405)
+arcade.draw_arc_filled(355, 400, 90, 90, arcade.color.RED, 225, 405)
 arcade.draw_circle_outline(365, 390, 50, arcade.color.BLACK, 5)
-arcade.draw_arc_filled(365, 390, 50, 50, arcade.color.AUBURN, 225, 45)
+arcade.draw_circle_filled(345, 400, 15, arcade.color.BONE)
 
 
 # --- Finish drawing ---
