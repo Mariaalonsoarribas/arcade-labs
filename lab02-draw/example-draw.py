@@ -13,77 +13,48 @@ import arcade
 arcade.open_window(800, 600, "Drawing Example")
 
 # Set the background color
-arcade.set_background_color(arcade.color.AIR_SUPERIORITY_BLUE)
+arcade.set_background_color(arcade.color.BONE)
 
 # Get ready to draw
 arcade.start_render()
+#Cara
+arcade.draw_circle_filled(360, 300, 280, arcade.color.AIR_SUPERIORITY_BLUE)
+arcade.draw_circle_outline(360, 300, 280, arcade.color.BLACK, 5)
+arcade.draw_circle_filled(360, 260, 240, arcade.color.ALMOND)
+arcade.draw_circle_outline(360, 260, 240, arcade.color.BLACK, 5)
 
-# Draw the grass
-arcade.draw_lrtb_rectangle_filled(0, 800, 200, 0, arcade.color.BITTER_LIME)
+#ojos
+arcade.draw_ellipse_filled(430, 490, 130, 150, arcade.color.ALMOND)
+arcade.draw_ellipse_filled(300, 490, 130, 150, arcade.color.ALMOND)
+arcade.draw_ellipse_outline(300, 490, 130, 150, arcade.color.BLACK, 5)
+arcade.draw_ellipse_outline(430, 490, 130, 150, arcade.color.BLACK, 5)
+arcade.draw_ellipse_filled(325, 490, 60, 80, arcade.color.BLACK)
+arcade.draw_ellipse_filled(405, 490, 60, 80, arcade.color.BLACK)
+arcade.draw_ellipse_filled(325, 490, 20, 40, arcade.color.ALMOND)
+arcade.draw_ellipse_filled(405, 490, 20, 40, arcade.color.ALMOND)
 
-# --- Draw the barn ---
+#Boca
+arcade.draw_arc_filled(365, 290, 300, 400, arcade.color.AUBURN, 180, 360)
+arcade.draw_arc_outline(365, 290, 300, 400, arcade.color.BLACK, 180, 360, 10)
+arcade.draw_line(210, 290, 520, 290, arcade.color.BLACK, 5)
+arcade.draw_ellipse_filled(365, 130, 120, 80, arcade.color.FALU_RED)
+arcade.draw_ellipse_filled(340, 170, 160, 140, arcade.color.FALU_RED)
+arcade.draw_ellipse_filled(395, 170, 160, 140, arcade.color.FALU_RED)
 
-# Barn cement base
-arcade.draw_lrtb_rectangle_filled(30, 350, 210, 170, arcade.color.BISQUE)
+#Bigotes
+arcade.draw_line(180, 300, 300, 330, arcade.color.BLACK, 3)
+arcade.draw_line(180, 350, 300, 350, arcade.color.BLACK, 3)
+arcade.draw_line(180, 400, 300, 370, arcade.color.BLACK, 3)
+arcade.draw_line(425, 330, 545, 300, arcade.color.BLACK, 3)
+arcade.draw_line(425, 350, 545, 350, arcade.color.BLACK, 3)
+arcade.draw_line(425, 370, 545, 400, arcade.color.BLACK, 3)
 
-# Bottom half
-arcade.draw_lrtb_rectangle_filled(30, 350, 350, 210, arcade.color.BROWN)
 
-# Left-bottom window
-arcade.draw_rectangle_filled(70, 260, 30, 40, arcade.color.BONE)
-arcade.draw_rectangle_filled(70, 260, 20, 30, arcade.color.BLACK)
+#Nariz
+arcade.draw_circle_filled(365, 390, 50, arcade.color.RED)
+arcade.draw_circle_outline(365, 390, 50, arcade.color.BLACK, 5)
+arcade.draw_arc_filled(365, 390, 50, 50, arcade.color.AUBURN, 225, 45)
 
-# Right-bottom window
-arcade.draw_rectangle_filled(310, 260, 30, 40, arcade.color.BONE)
-arcade.draw_rectangle_filled(310, 260, 20, 30, arcade.color.BLACK)
-
-# Barn door
-arcade.draw_rectangle_filled(190, 230, 100, 100, arcade.color.BLACK_BEAN)
-
-# Rail above the door
-arcade.draw_rectangle_filled(190, 280, 180, 5, arcade.color.BONE)
-
-# Draw second level of barn
-arcade.draw_polygon_filled([[20, 350],
-                            [100, 470],
-                            [280, 470],
-                            [360, 340]],
-                            arcade.color.BROWN)
-
-# Draw loft of barn
-arcade.draw_triangle_filled(100, 470, 280, 470, 190, 500, arcade.color.BROWN)
-
-# Left-top window
-arcade.draw_rectangle_filled(130, 440, 30, 40, arcade.color.BONE)
-arcade.draw_rectangle_filled(130, 440, 20, 30, arcade.color.BLACK)
-
-# Right-top window
-arcade.draw_rectangle_filled(250, 440, 30, 40, arcade.color.BONE)
-arcade.draw_rectangle_filled(250, 440, 20, 30, arcade.color.BLACK)
-
-# Draw 2nd level door
-arcade.draw_rectangle_outline(190, 310, 30, 60, arcade.color.BONE, 5)
-
-# --- Draw the tractor ---
-
-# Draw the engine
-arcade.draw_rectangle_filled(600, 120, 140, 70, arcade.color.GRAY)
-arcade.draw_rectangle_filled(590, 105, 90, 40, arcade.color.BLACK)
-
-# Draw the smoke stack
-arcade.draw_rectangle_filled(580, 175, 10, 40, arcade.color.BLACK)
-
-# Back wheel
-arcade.draw_circle_filled(490, 110, 50, arcade.color.BLACK)
-arcade.draw_circle_filled(490, 110, 45, arcade.color.BLACK_OLIVE)
-arcade.draw_circle_filled(490, 110, 35, arcade.color.OLD_LACE)
-arcade.draw_circle_filled(490, 110, 10, arcade.color.RED)
-
-# Front wheel
-arcade.draw_circle_filled(650, 90, 30, arcade.color.BLACK)
-arcade.draw_circle_filled(650, 90, 25, arcade.color.BLACK_OLIVE)
-arcade.draw_circle_filled(650, 90, 18, arcade.color.OLD_LACE)
-arcade.draw_circle_filled(650, 90, 5, arcade.color.RED)
 
 # --- Finish drawing ---
 arcade.finish_render()
